@@ -69,4 +69,5 @@ package-lock.json
 .expo/web/*
 
 # other
-db/Project.quiproj.1068.rdr.flock
+db/*.flock
+software/.metadata/
