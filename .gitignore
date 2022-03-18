@@ -67,3 +67,6 @@ package-lock.json
 # expo
 .expo/web
 .expo/web/*
+
+# other
+db/Project.quiproj.1068.rdr.flock

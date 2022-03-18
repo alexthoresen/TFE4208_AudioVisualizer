@@ -1,0 +1,9 @@
+22:45:31 **** Incremental Build of configuration Nios II for project hello_world_0 ****
+make all 
+Info: Building ../hello_world_0_bsp/
+C:/Quartus2/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_0_bsp/
+[BSP build complete]
+[hello_world_0 build complete]
+
+22:45:32 Build Finished (took 796ms)
+

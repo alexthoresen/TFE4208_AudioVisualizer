@@ -1,0 +1,153 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 200 144)
+	(text "wb_audioCFG_twoWireMaster" (rect 5 0 151 12)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "async_nreset" (rect 0 0 67 12)(font "Arial" ))
+		(text "async_nreset" (rect 21 27 88 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "gClk" (rect 0 0 22 12)(font "Arial" ))
+		(text "gClk" (rect 21 43 43 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "continueStream" (rect 0 0 76 12)(font "Arial" ))
+		(text "continueStream" (rect 21 59 97 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "dataIn[7..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "dataIn[7..0]" (rect 21 75 77 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "dataInRead" (rect 0 0 56 12)(font "Arial" ))
+		(text "dataInRead" (rect 107 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 1))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "idle" (rect 0 0 16 12)(font "Arial" ))
+		(text "idle" (rect 147 43 163 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48)(line_width 1))
+	)
+	(port
+		(pt 184 64)
+		(output)
+		(text "transErr" (rect 0 0 38 12)(font "Arial" ))
+		(text "transErr" (rect 125 59 163 71)(font "Arial" ))
+		(line (pt 184 64)(pt 168 64)(line_width 1))
+	)
+	(port
+		(pt 184 96)
+		(output)
+		(text "SCLK" (rect 0 0 28 12)(font "Arial" ))
+		(text "SCLK" (rect 135 91 163 103)(font "Arial" ))
+		(line (pt 184 96)(pt 168 96)(line_width 1))
+	)
+	(port
+		(pt 184 80)
+		(bidir)
+		(text "SDA" (rect 0 0 22 12)(font "Arial" ))
+		(text "SDA" (rect 141 75 163 87)(font "Arial" ))
+		(line (pt 184 80)(pt 168 80)(line_width 1))
+	)
+	(parameter
+		"gClk_speed_MHz"
+		"SF\"50.0\""
+		""
+	)
+	(parameter
+		"clock_on_rising_flank"
+		"E\"true\""
+		""
+	)
+	(parameter
+		"reset_active_low"
+		"E\"true\""
+		""
+	)
+	(parameter
+		"write_active_low"
+		"E\"true\""
+		""
+	)
+	(parameter
+		"SCLK_min_low_time_ns"
+		"600"
+		""
+	)
+	(parameter
+		"SCLK_min_high_time_ns"
+		"1300"
+		""
+	)
+	(parameter
+		"dataSetup_min_time_ns"
+		"100"
+		""
+	)
+	(parameter
+		"dataHold_min_time_ns"
+		"100"
+		""
+	)
+	(parameter
+		"min_start_hold_time_ns"
+		"600"
+		""
+	)
+	(parameter
+		"min_stop_hold_time_ns"
+		"600"
+		""
+	)
+	(parameter
+		"min_idle_time_ns"
+		"600"
+		""
+	)
+	(parameter
+		"max_slave_SCLK_hold"
+		"1200"
+		""
+	)
+	(drawing
+		(rectangle (rect 16 16 168 112)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 200 -64 300 16))
+)

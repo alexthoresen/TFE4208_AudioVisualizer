@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?><system name="wb_NiosProcessor">
+    <parameter name="bonusData">bonusData 
+{
+   element clk
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element onchip_mem.s1
+   {
+      datum baseAddress
+      {
+         value = "65536";
+         type = "long";
+      }
+   }
+   element B_reg_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "135216";
+         type = "long";
+      }
+   }
+   element sysid
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element character_lcd.avalon_lcd_slave
+   {
+      datum baseAddress
+      {
+         value = "135304";
+         type = "long";
+      }
+   }
+   element Dbg_pc.s1
+   {
+      datum baseAddress
+      {
+         value = "135232";
+         type = "long";
+      }
+   }
+   element ps2_keyboard.avalon_PS2_slave
+   {
+      datum baseAddress
+      {
+         value = "135296";
+         type = "long";
+      }
+   }
+   element Dbg_reg_set.s1
+   {
+      datum baseAddress
+      {
+         value = "135264";
+         type = "long";
+      }
+   }
+   element B_reg_pio
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element A_reg_pio
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element cpu
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element sys_clk_timer.s1
+   {
+      datum baseAddress
+      {
+         value = "135168";
+         type = "long";
+      }
+   }
+   element character_lcd
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element Dbg_reg_set
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element cpu.jtag_debug_module
+   {
+      datum baseAddress
+      {
+         value = "133120";
+         type = "long";
+      }
+   }
+   element A_reg_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "135200";
+         type = "long";
+      }
+   }
+   element Dbg_pc
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element jtag_uart
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element onchip_mem
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{memorySize=KBytes}";
+         type = "String";
+      }
+   }
+   element Dbg_reg
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element sysid.control_slave
+   {
+      datum baseAddress
+      {
+         value = "135288";
+         type = "long";
+      }
+   }
+   element wb_NiosProcessor
+   {
+   }
+   element ps2_keyboard
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element Dbg_reg.s1
+   {
+      datum baseAddress
+      {
+         value = "135248";
+         type = "long";
+      }
+   }
+   element sys_clk_timer
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element jtag_uart.avalon_jtag_slave
+   {
+      datum baseAddress
+      {
+         value = "135280";
+         type = "long";
+      }
+   }
+}
+</parameter>
+    <parameter name="deviceFamily" value="CYCLONEII" />
+    <parameter name="generateLegacySim" value="false" />
+    <parameter name="hardcopyCompatible" value="false" />
+    <parameter name="hdlLanguage" value="VHDL" />
+    <parameter name="projectName" value="Lab4.qpf" />
+    <parameter name="systemHash" value="35047907901" />
+    <parameter name="timeStamp" value="1224971511765" />
+    <module name="clk" kind="clock_source" version="8.0" enabled="1">
+        <parameter name="clockFrequency" value="50000000" />
+        <parameter name="clockFrequencyKnown" value="true" />
+    </module>
+    <module name="onchip_mem" kind="altera_avalon_onchip_memory2" version="8.0" enabled="1">
+        <parameter name="allowInSystemMemoryContentEditor" value="false" />
+        <parameter name="blockType" value="M4K" />
+        <parameter name="dataWidth" value="32" />
+        <parameter name="dualPort" value="false" />
+        <parameter name="initMemContent" value="true" />
+        <parameter name="initializationFileName" value="onchip_mem" />
+        <parameter name="instanceID" value="NONE" />
+        <parameter name="memorySize" value="40960" />
+        <parameter name="readDuringWriteMode" value="DONT_CARE" />
+        <parameter name="simAllowMRAMContentsFile" value="false" />
+        <parameter name="slave1Latency" value="1" />
+        <parameter name="slave2Latency" value="1" />
+        <parameter name="useNonDefaultInitFile" value="false" />
+        <parameter name="useShallowMemBlocks" value="true" />
+        <parameter name="writable" value="true" />
+    </module>
+    <module name="cpu" kind="altera_nios2" version="8.0" enabled="1">
+        <parameter name="userDefinedSettings" value="" />
+        <parameter name="setting_showUnpublishedSettings" value="false" />
+        <parameter name="setting_showInternalSettings" value="false" />
+        <parameter name="setting_preciseSlaveAccessErrorException" value="false" />
+        <parameter name="setting_preciseIllegalMemAccessException" value="false" />
+        <parameter name="setting_preciseDivisionErrorException" value="false" />
+        <parameter name="setting_performanceCounter" value="false" />
+        <parameter name="setting_perfCounterWidth" value="_32" />
+        <parameter name="setting_illegalMemAccessDetection" value="false" />
+        <parameter name="setting_illegalInstructionsTrap" value="false" />
+        <parameter name="setting_fullWaveformSignals" value="false" />
+        <parameter name="setting_extraExceptionInfo" value="false" />
+        <parameter name="setting_exportPCB" value="false" />
+        <parameter name="setting_debugSimGen" value="false" />
+        <parameter name="setting_clearXBitsLDNonBypass" value="true" />
+        <parameter name="setting_branchPredictionType" value="Automatic" />
+        <parameter name="setting_bit31BypassDCache" value="true" />
+        <parameter name="setting_bhtPtrSz" value="_8" />
+        <parameter name="setting_bhtIndexPcOnly" value="false" />
+        <parameter name="setting_avalonDebugPortPresent" value="false" />
+        <parameter name="setting_alwaysEncrypt" value="true" />
+        <parameter name="setting_allowFullAddressRange" value="false" />
+        <parameter name="setting_activateTrace" value="true" />
+        <parameter name="setting_activateTestEndChecker" value="false" />
+        <parameter name="setting_activateMonitors" value="true" />
+        <parameter name="setting_activateModelChecker" value="false" />
+        <parameter name="setting_HDLSimCachesCleared" value="true" />
+        <parameter name="setting_HBreakTest" value="false" />
+        <parameter name="resetSlave" value="onchip_mem.s1" />
+        <parameter name="resetOffset" value="0" />
+        <parameter name="muldiv_multiplierType" value="NoneSmall" />
+        <parameter name="muldiv_divider" value="false" />
+        <parameter name="mpu_useLimit" value="false" />
+        <parameter name="mpu_numOfInstRegion" value="8" />
+        <parameter name="mpu_numOfDataRegion" value="8" />
+        <parameter name="mpu_minInstRegionSize" value="_12" />
+        <parameter name="mpu_minDataRegionSize" value="_12" />
+        <parameter name="mpu_enabled" value="false" />
+        <parameter name="mmu_uitlbNumEntries" value="_4" />
+        <parameter name="mmu_udtlbNumEntries" value="_6" />
+        <parameter name="mmu_tlbPtrSz" value="_7" />
+        <parameter name="mmu_tlbNumWays" value="_16" />
+        <parameter name="mmu_processIDNumBits" value="_10" />
+        <parameter name="mmu_enabled" value="false" />
+        <parameter name="mmu_autoAssignTlbPtrSz" value="true" />
+        <parameter name="mmu_TLBMissExcSlave" value="" />
+        <parameter name="mmu_TLBMissExcOffset" value="0" />
+        <parameter name="impl" value="Small" />
+        <parameter name="icache_size" value="_2048" />
+        <parameter name="icache_ramBlockType" value="Automatic" />
+        <parameter name="icache_numTCIM" value="_0" />
+        <parameter name="icache_burstType" value="None" />
+        <parameter name="exceptionSlave" value="onchip_mem.s1" />
+        <parameter name="exceptionOffset" value="32" />
+        <parameter name="debug_triggerArming" value="true" />
+        <parameter name="debug_level" value="Level1" />
+        <parameter name="debug_embeddedPLL" value="true" />
+        <parameter name="debug_debugReqSignals" value="false" />
+        <parameter name="debug_OCIOnchipTrace" value="_128" />
+        <parameter name="dcache_size" value="_2048" />
+        <parameter name="dcache_ramBlockType" value="Automatic" />
+        <parameter name="dcache_omitDataMaster" value="false" />
+        <parameter name="dcache_numTCDM" value="_0" />
+        <parameter name="dcache_lineSize" value="_32" />
+        <parameter name="dcache_bursts" value="false" />
+        <parameter name="cpuReset" value="false" />
+        <parameter name="breakSlave">cpu.jtag_debug_module</parameter>
+        <parameter name="breakOffset" value="32" />
+    </module>
+    <module name="jtag_uart" kind="altera_avalon_jtag_uart" version="8.0" enabled="1">
+        <parameter name="allowMultipleConnections" value="false" />
+        <parameter name="hubInstanceID" value="0" />
+        <parameter name="readBufferDepth" value="64" />
+        <parameter name="readIRQThreshold" value="8" />
+        <parameter name="simInputCharacterStream" value="" />
+        <parameter name="simInteractiveOptions">INTERACTIVE_ASCII_OUTPUT</parameter>
+        <parameter name="useRegistersForReadBuffer" value="false" />
+        <parameter name="useRegistersForWriteBuffer" value="false" />
+        <parameter name="writeBufferDepth" value="64" />
+        <parameter name="writeIRQThreshold" value="8" />
+    </module>
+    <module name="sys_clk_timer" kind="altera_avalon_timer" version="8.0" enabled="1">
+        <parameter name="alwaysRun" value="false" />
+        <parameter name="counterSize" value="32" />
+        <parameter name="fixedPeriod" value="false" />
+        <parameter name="period" value="1.0" />
+        <parameter name="periodUnits" value="MSEC" />
+        <parameter name="resetOutput" value="false" />
+        <parameter name="snapshot" value="true" />
+        <parameter name="timeoutPulseOutput" value="false" />
+        <parameter name="timerPreset" value="FULL_FEATURED" />
+    </module>
+    <module name="sysid" kind="altera_avalon_sysid" version="8.0" enabled="1" />
+    <module name="ps2_keyboard" kind="altera_up_avalon_ps2_classic" version="6.1" enabled="1">
+        <parameter name="instancePTF">MODULE ps2_keyboard
+{
+   class = "altera_up_avalon_ps2";
+   class_version = "6.1";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "ps2";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         MESSAGES 
+         {
+         }
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_PS2_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "1";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "1";
+         Setup_Time = "0";
+         Hold_Time = "0";
+         Read_Wait_States = "peripheral_controlled";
+         Write_Wait_States = "peripheral_controlled";
+         Read_Latency = "1";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "1";
+            Write_Wait_Value = "1";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "1";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "1";
+            Is_Memory_Device = "1";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT byteenable
+         {
+            width = "4";
+            width_expression = "";
+            direction = "input";
+            type = "byteenable";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT PS2_CLK
+         {
+            width = "1";
+            width_expression = "";
+            direction = "inout";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT PS2_DAT
+         {
+            width = "1";
+            width_expression = "";
+            direction = "inout";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT irq
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "irq";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT waitrequest
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "waitrequest";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+      }
+   }
+   HDL_INFO 
+   {
+      Synthesis_HDL_Files = "__PROJECT_DIRECTORY__/Altera_UP_Avalon_PS2.v,__PROJECT_DIRECTORY__/Altera_UP_PS2.v,__PROJECT_DIRECTORY__/Altera_UP_PS2_Command_Out.v,__PROJECT_DIRECTORY__/Altera_UP_PS2_Data_In.v, __PROJECT_DIRECTORY__/ps2_keyboard.v";
+   }
+}
+</parameter>
+    </module>
+    <module name="character_lcd" kind="altera_up_avalon_character_lcd_classic" version="6.0" enabled="1">
+        <parameter name="instancePTF">MODULE character_lcd
+{
+   class = "altera_up_avalon_character_lcd";
+   class_version = "6.0";
+   SYSTEM_BUILDER_INFO 
+   {
+      Instantiate_In_System_Module = "1";
+      Has_Clock = "1";
+      Default_Module_Name = "character_lcd";
+      Top_Level_Ports_Are_Enumerated = "1";
+      Is_Enabled = "1";
+      Clock_Source = "clk";
+      View 
+      {
+         MESSAGES 
+         {
+         }
+      }
+   }
+   COMPONENT_BUILDER 
+   {
+      GLS_SETTINGS 
+      {
+      }
+   }
+   PORT_WIRING 
+   {
+      PORT clk
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "clk";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+      PORT reset
+      {
+         width = "1";
+         width_expression = "";
+         direction = "input";
+         type = "reset";
+         is_shared = "0";
+         vhdl_record_name = "";
+         vhdl_record_type = "";
+      }
+   }
+   WIZARD_SCRIPT_ARGUMENTS 
+   {
+      hdl_parameters 
+      {
+         cursor_type = "1";
+      }
+      PARAMETERS 
+      {
+         CURSOR_ON = "1";
+         BLINKING_ON = "0";
+      }
+   }
+   SIMULATION 
+   {
+      DISPLAY 
+      {
+      }
+   }
+   SLAVE avalon_lcd_slave
+   {
+      SYSTEM_BUILDER_INFO 
+      {
+         Bus_Type = "avalon";
+         Address_Group = "1";
+         Has_Clock = "0";
+         Address_Width = "1";
+         Address_Alignment = "dynamic";
+         Data_Width = "32";
+         Has_Base_Address = "1";
+         Has_IRQ = "0";
+         Setup_Time = "0";
+         Hold_Time = "0";
+         Read_Wait_States = "peripheral_controlled";
+         Write_Wait_States = "peripheral_controlled";
+         Read_Latency = "0";
+         Maximum_Pending_Read_Transactions = "0";
+         Active_CS_Through_Read_Latency = "0";
+         Is_Printable_Device = "0";
+         Is_Memory_Device = "0";
+         Is_Readable = "1";
+         Is_Writable = "1";
+         Minimum_Uninterrupted_Run_Length = "1";
+      }
+      COMPONENT_BUILDER 
+      {
+         AVS_SETTINGS 
+         {
+            Setup_Value = "0";
+            Read_Wait_Value = "1";
+            Write_Wait_Value = "1";
+            Hold_Value = "0";
+            Timing_Units = "cycles";
+            Read_Latency_Value = "0";
+            Minimum_Arbitration_Shares = "1";
+            Active_CS_Through_Read_Latency = "0";
+            Max_Pending_Read_Transactions_Value = "1";
+            Address_Alignment = "dynamic";
+            Is_Printable_Device = "0";
+            Interleave_Bursts = "0";
+            interface_name = "Avalon Slave";
+            external_wait = "1";
+            Is_Memory_Device = "1";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT address
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "address";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT chipselect
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "chipselect";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT read
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "read";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT write
+         {
+            width = "1";
+            width_expression = "";
+            direction = "input";
+            type = "write";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT writedata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "input";
+            type = "writedata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT LCD_DATA
+         {
+            width = "8";
+            width_expression = "";
+            direction = "inout";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT LCD_ON
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT LCD_BLON
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT LCD_EN
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT LCD_RS
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT LCD_RW
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "export";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT readdata
+         {
+            width = "32";
+            width_expression = "";
+            direction = "output";
+            type = "readdata";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+         PORT waitrequest
+         {
+            width = "1";
+            width_expression = "";
+            direction = "output";
+            type = "waitrequest";
+            is_shared = "0";
+            vhdl_record_name = "";
+            vhdl_record_type = "";
+         }
+      }
+   }
+}
+</parameter>
+    </module>
+    <module name="A_reg_pio" kind="altera_avalon_pio" version="8.0" enabled="1">
+        <parameter name="bitClearingEdgeCapReg" value="false" />
+        <parameter name="captureEdge" value="false" />
+        <parameter name="direction" value="Output" />
+        <parameter name="edgeType" value="RISING" />
+        <parameter name="generateIRQ" value="false" />
+        <parameter name="irqType" value="LEVEL" />
+        <parameter name="resetValue" value="0" />
+        <parameter name="simDoTestBenchWiring" value="false" />
+        <parameter name="simDrivenValue" value="0" />
+        <parameter name="width" value="16" />
+    </module>
+    <module name="B_reg_pio" kind="altera_avalon_pio" version="8.0" enabled="1">
+        <parameter name="simDrivenValue" value="0" />
+        <parameter name="simDoTestBenchWiring" value="false" />
+        <parameter name="edgeType" value="RISING" />
+        <parameter name="resetValue" value="0" />
+        <parameter name="direction" value="Output" />
+        <parameter name="width" value="16" />
+        <parameter name="generateIRQ" value="false" />
+        <parameter name="captureEdge" value="false" />
+        <parameter name="bitClearingEdgeCapReg" value="false" />
+        <parameter name="irqType" value="LEVEL" />
+    </module>
+    <module name="Dbg_pc" kind="altera_avalon_pio" version="8.0" enabled="1">
+        <parameter name="simDrivenValue" value="0" />
+        <parameter name="simDoTestBenchWiring" value="false" />
+        <parameter name="edgeType" value="RISING" />
+        <parameter name="resetValue" value="0" />
+        <parameter name="direction" value="Input" />
+        <parameter name="width" value="8" />
+        <parameter name="generateIRQ" value="false" />
+        <parameter name="captureEdge" value="true" />
+        <parameter name="bitClearingEdgeCapReg" value="false" />
+        <parameter name="irqType" value="LEVEL" />
+    </module>
+    <module name="Dbg_reg" kind="altera_avalon_pio" version="8.0" enabled="1">
+        <parameter name="simDrivenValue" value="0" />
+        <parameter name="simDoTestBenchWiring" value="false" />
+        <parameter name="edgeType" value="RISING" />
+        <parameter name="resetValue" value="0" />
+        <parameter name="direction" value="Input" />
+        <parameter name="width" value="8" />
+        <parameter name="generateIRQ" value="false" />
+        <parameter name="captureEdge" value="true" />
+        <parameter name="bitClearingEdgeCapReg" value="false" />
+        <parameter name="irqType" value="LEVEL" />
+    </module>
+    <module name="Dbg_reg_set" kind="altera_avalon_pio" version="8.0" enabled="1">
+        <parameter name="simDrivenValue" value="0" />
+        <parameter name="simDoTestBenchWiring" value="false" />
+        <parameter name="edgeType" value="RISING" />
+        <parameter name="resetValue" value="0" />
+        <parameter name="direction" value="Output" />
+        <parameter name="width" value="4" />
+        <parameter name="generateIRQ" value="false" />
+        <parameter name="captureEdge" value="false" />
+        <parameter name="bitClearingEdgeCapReg" value="false" />
+        <parameter name="irqType" value="LEVEL" />
+    </module>
+    <connection kind="clock" version="8.0" start="clk.clk" end="onchip_mem.clk1" />
+    <connection kind="clock" version="8.0" start="clk.clk" end="cpu.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.instruction_master" end="cpu.jtag_debug_module">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00020800" />
+    </connection>
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="cpu.jtag_debug_module">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00020800" />
+    </connection>
+    <connection kind="avalon" version="6.1" start="cpu.instruction_master" end="onchip_mem.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00010000" />
+    </connection>
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="onchip_mem.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00010000" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="jtag_uart.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="jtag_uart.avalon_jtag_slave">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021070" />
+    </connection>
+    <connection kind="interrupt" version="8.0" start="cpu.d_irq" end="jtag_uart.irq">
+        <parameter name="irqNumber" value="16" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="sys_clk_timer.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="sys_clk_timer.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021000" />
+    </connection>
+    <connection kind="interrupt" version="8.0" start="cpu.d_irq" end="sys_clk_timer.irq">
+        <parameter name="irqNumber" value="0" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="sysid.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="sysid.control_slave">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021078" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="ps2_keyboard.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="ps2_keyboard.avalon_PS2_slave">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021080" />
+    </connection>
+    <connection kind="interrupt" version="8.0" start="cpu.d_irq" end="ps2_keyboard.avalon_PS2_slave_irq">
+        <parameter name="irqNumber" value="8" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="character_lcd.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="character_lcd.avalon_lcd_slave">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021088" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="A_reg_pio.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="A_reg_pio.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021020" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="B_reg_pio.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="B_reg_pio.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021030" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="Dbg_pc.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="Dbg_pc.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021040" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="Dbg_reg.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="Dbg_reg.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021050" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="Dbg_reg_set.clk" />
+    <connection kind="avalon" version="6.1" start="cpu.data_master" end="Dbg_reg_set.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x00021060" />
+    </connection>
+</system>

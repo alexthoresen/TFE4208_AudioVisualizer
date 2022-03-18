@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 288 240)
+	(text "mul" (rect 5 0 23 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 16 160 33 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DVI" (rect 0 0 20 14)(font "Arial" (font_size 8)))
+		(text "DVI" (rect 21 24 41 38)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "MTOR[15..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "MTOR[15..0]" (rect 21 56 90 70)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 72 44 86)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "RESET_N" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "RESET_N" (rect 21 88 74 102)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "MAND[15..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "MAND[15..0]" (rect 21 40 91 54)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ENMUL" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "ENMUL" (rect 21 120 61 134)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "SOUND" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "SOUND" (rect 21 136 63 150)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "DVO" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "DVO" (rect 176 27 203 41)(font "Arial" (font_size 8)))
+		(line (pt 224 32)(pt 208 32)(line_width 1))
+	)
+	(port
+		(pt 224 128)
+		(output)
+		(text "COUNT[3..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "COUNT[3..0]" (rect 144 120 213 134)(font "Arial" (font_size 8)))
+		(line (pt 224 128)(pt 208 128)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "RESULT_B[15..0]" (rect 0 0 96 14)(font "Arial" (font_size 8)))
+		(text "RESULT_B[15..0]" (rect 120 40 216 54)(font "Arial" (font_size 8)))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "RESULT_A[15..0]" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "RESULT_A[15..0]" (rect 120 56 217 70)(font "Arial" (font_size 8)))
+		(line (pt 224 64)(pt 208 64)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 160)(line_width 1))
+	)
+)

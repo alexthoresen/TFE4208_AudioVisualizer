@@ -1,0 +1,162 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+//#pragma file_not_in_maxplusii_format
+(header "graphic" (version "1.3"))
+(pin
+	(input)
+	(rect 176 192 344 208)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "INDATA[3..0]" (rect 5 0 71 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 632 256 808 272)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "ZERO" (rect 90 0 120 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(symbol
+	(rect 496 224 560 304)
+	(text "NOR4" (rect 1 0 26 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 69 20 81)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
+		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
+		(line (pt 0 64)(pt 14 64)(line_width 1))
+	)
+	(port
+		(pt 64 40)
+		(output)
+		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
+		(line (pt 56 40)(pt 64 40)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 29)(pt 25 29)(line_width 1))
+		(line (pt 14 52)(pt 25 52)(line_width 1))
+		(line (pt 14 29)(pt 14 13)(line_width 1))
+		(line (pt 14 67)(pt 14 51)(line_width 1))
+		(arc (pt 25 51)(pt 48 40)(rect -4 -7 55 52)(line_width 1))
+		(arc (pt 48 40)(pt 25 29)(rect -4 29 55 88)(line_width 1))
+		(arc (pt 8 45)(pt 8 35)(rect -13 24 20 57)(line_width 1))
+		(circle (rect 48 36 56 44)(line_width 1))
+	)
+)
+(connector
+	(pt 344 200)
+	(pt 384 200)
+	(bus)
+)
+(connector
+	(pt 384 200)
+	(pt 384 240)
+	(bus)
+)
+(connector
+	(pt 384 240)
+	(pt 384 256)
+	(bus)
+)
+(connector
+	(pt 384 256)
+	(pt 384 272)
+	(bus)
+)
+(connector
+	(pt 384 272)
+	(pt 384 288)
+	(bus)
+)
+(connector
+	(pt 384 288)
+	(pt 384 304)
+	(bus)
+)
+(connector
+	(text "INDATA[3]" (rect 394 224 447 236)(font "Arial" ))
+	(pt 496 240)
+	(pt 384 240)
+)
+(connector
+	(text "INDATA[2]" (rect 394 240 447 252)(font "Arial" ))
+	(pt 496 256)
+	(pt 384 256)
+)
+(connector
+	(text "INDATA[1]" (rect 394 256 447 268)(font "Arial" ))
+	(pt 496 272)
+	(pt 384 272)
+)
+(connector
+	(text "INDATA[0]" (rect 394 272 447 284)(font "Arial" ))
+	(pt 496 288)
+	(pt 384 288)
+)
+(connector
+	(pt 560 264)
+	(pt 632 264)
+)
+(junction (pt 384 240))
+(junction (pt 384 256))
+(junction (pt 384 272))
+(junction (pt 384 288))

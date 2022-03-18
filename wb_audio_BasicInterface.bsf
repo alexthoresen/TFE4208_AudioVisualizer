@@ -1,0 +1,185 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 432 456)
+	(text "wb_audio_BasicInterface" (rect 5 0 151 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 376 25 388)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "11M28Hz_masterAudioClock" (rect 0 0 162 14)(font "Arial" (font_size 8)))
+		(text "11M28Hz_masterAudioClock" (rect 21 27 183 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "44k1Hz_frameClk" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "44k1Hz_frameClk" (rect 21 43 120 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "async_nreset" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "async_nreset" (rect 21 59 100 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "nResetCodec" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "nResetCodec" (rect 21 219 97 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "nUpdateCodec" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "nUpdateCodec" (rect 21 235 104 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "cfgData[8..0]" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "cfgData[8..0]" (rect 21 283 94 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "cfgAddr[3..0]" (rect 0 24 75 38)(font "Arial" (font_size 8)))
+		(text "cfgAddr[3..0]" (rect 24 296 99 310)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "nCfgLatch" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "nCfgLatch" (rect 21 267 80 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "audioStreamInData[15..0]" (rect 0 0 141 14)(font "Arial" (font_size 8)))
+		(text "audioStreamInData[15..0]" (rect 21 347 162 361)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "audioStreamInClock" (rect 0 0 110 14)(font "Arial" (font_size 8)))
+		(text "audioStreamInClock" (rect 21 331 131 345)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "codecADCDAT" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "codecADCDAT" (rect 21 163 107 177)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 16 168)(line_width 1))
+	)
+	(port
+		(pt 368 120)
+		(output)
+		(text "SCLK" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "SCLK" (rect 316 115 347 129)(font "Arial" (font_size 8)))
+		(line (pt 368 120)(pt 352 120)(line_width 1))
+	)
+	(port
+		(pt 368 224)
+		(output)
+		(text "I2C_transErr" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "I2C_transErr" (rect 277 219 347 233)(font "Arial" (font_size 8)))
+		(line (pt 368 224)(pt 352 224)(line_width 1))
+	)
+	(port
+		(pt 368 304)
+		(output)
+		(text "cfgDataOut[8..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "cfgDataOut[8..0]" (rect 254 299 347 313)(font "Arial" (font_size 8)))
+		(line (pt 368 304)(pt 352 304)(line_width 3))
+	)
+	(port
+		(pt 368 152)
+		(output)
+		(text "codecSerialClock" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "codecSerialClock" (rect 250 147 347 161)(font "Arial" (font_size 8)))
+		(line (pt 368 152)(pt 352 152)(line_width 1))
+	)
+	(port
+		(pt 368 168)
+		(output)
+		(text "codecDACLRCK" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "codecDACLRCK" (rect 254 163 347 177)(font "Arial" (font_size 8)))
+		(line (pt 368 168)(pt 352 168)(line_width 1))
+	)
+	(port
+		(pt 368 184)
+		(output)
+		(text "codecDACDAT" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "codecDACDAT" (rect 261 179 347 193)(font "Arial" (font_size 8)))
+		(line (pt 368 184)(pt 352 184)(line_width 1))
+	)
+	(port
+		(pt 368 352)
+		(output)
+		(text "audioStreamOutData[15..0]" (rect 0 0 152 14)(font "Arial" (font_size 8)))
+		(text "audioStreamOutData[15..0]" (rect 195 347 347 361)(font "Arial" (font_size 8)))
+		(line (pt 368 352)(pt 352 352)(line_width 3))
+	)
+	(port
+		(pt 368 336)
+		(output)
+		(text "audioStreamOutClock" (rect 0 0 121 14)(font "Arial" (font_size 8)))
+		(text "audioStreamOutClock" (rect 226 331 347 345)(font "Arial" (font_size 8)))
+		(line (pt 368 336)(pt 352 336)(line_width 1))
+	)
+	(port
+		(pt 368 240)
+		(output)
+		(text "I2C_busy" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "I2C_busy" (rect 280 235 333 249)(font "Arial" (font_size 8)))
+		(line (pt 368 240)(pt 352 240)(line_width 1))
+	)
+	(port
+		(pt 368 104)
+		(bidir)
+		(text "SDA" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "SDA" (rect 322 99 347 113)(font "Arial" (font_size 8)))
+		(line (pt 368 104)(pt 352 104)(line_width 1))
+	)
+	(drawing
+		(text "Codec interface" (rect 136 80 226 94)(font "Arial" (font_size 8)))
+		(text "User interface" (rect 136 200 217 214)(font "Arial" (font_size 8)))
+		(text "Control" (rect 152 224 192 238)(font "Arial" (font_size 8)))
+		(text "Config" (rect 152 280 188 294)(font "Arial" (font_size 8)))
+		(text "Data" (rect 152 328 177 342)(font "Arial" (font_size 8)))
+		(line (pt 16 80)(pt 352 80)(line_width 1))
+		(line (pt 16 96)(pt 352 96)(line_width 1))
+		(line (pt 352 200)(pt 16 200)(line_width 1))
+		(line (pt 16 216)(pt 352 216)(line_width 1))
+		(rectangle (rect 16 16 352 368)(line_width 1))
+	)
+)
