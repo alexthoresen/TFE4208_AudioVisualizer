@@ -1,4 +1,4 @@
-// (C) 2001-2020 Intel Corporation. All rights reserved.
+// (C) 2001-2018 Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files from any of the foregoing (including device programming or simulation 
@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/20.1std/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
+// $Id: //acds/rel/18.1std/ip/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2019/10/06 $
+// $Date: 2018/07/18 $
 // $Author: psgswbuild $
 
 // -------------------------------------
@@ -28,10 +28,10 @@
 // ------------------------------------------
 // Generation parameters:
 //   output_name:         DE2_115_SOPC_mm_interconnect_0_cmd_demux_001
-//   ST_DATA_W:           94
-//   ST_CHANNEL_W:        4
+//   ST_DATA_W:           96
+//   ST_CHANNEL_W:        5
 //   NUM_OUTPUTS:         2
-//   VALID_WIDTH:         4
+//   VALID_WIDTH:         5
 // ------------------------------------------
 
 //------------------------------------------
@@ -45,9 +45,9 @@ module DE2_115_SOPC_mm_interconnect_0_cmd_demux_001
     // -------------------
     // Sink
     // -------------------
-    input  [4-1      : 0]   sink_valid,
-    input  [94-1    : 0]   sink_data, // ST_DATA_W=94
-    input  [4-1 : 0]   sink_channel, // ST_CHANNEL_W=4
+    input  [5-1      : 0]   sink_valid,
+    input  [96-1    : 0]   sink_data, // ST_DATA_W=96
+    input  [5-1 : 0]   sink_channel, // ST_CHANNEL_W=5
     input                         sink_startofpacket,
     input                         sink_endofpacket,
     output                        sink_ready,
@@ -56,15 +56,15 @@ module DE2_115_SOPC_mm_interconnect_0_cmd_demux_001
     // Sources 
     // -------------------
     output reg                      src0_valid,
-    output reg [94-1    : 0] src0_data, // ST_DATA_W=94
-    output reg [4-1 : 0] src0_channel, // ST_CHANNEL_W=4
+    output reg [96-1    : 0] src0_data, // ST_DATA_W=96
+    output reg [5-1 : 0] src0_channel, // ST_CHANNEL_W=5
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
 
     output reg                      src1_valid,
-    output reg [94-1    : 0] src1_data, // ST_DATA_W=94
-    output reg [4-1 : 0] src1_channel, // ST_CHANNEL_W=4
+    output reg [96-1    : 0] src1_data, // ST_DATA_W=96
+    output reg [5-1 : 0] src1_channel, // ST_CHANNEL_W=5
     output reg                      src1_startofpacket,
     output reg                      src1_endofpacket,
     input                           src1_ready,
@@ -109,7 +109,7 @@ module DE2_115_SOPC_mm_interconnect_0_cmd_demux_001
     assign ready_vector[0] = src0_ready;
     assign ready_vector[1] = src1_ready;
 
-    assign sink_ready = |(sink_channel & {{2{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{3{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

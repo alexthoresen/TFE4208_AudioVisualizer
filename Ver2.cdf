@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Quartus2_Project/Lab6/Lab6/") File("Ver2_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Quartus2_Project/Project/") File("Ver2_time_limited.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

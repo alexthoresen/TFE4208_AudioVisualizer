@@ -64,3 +64,9 @@ make clean
 14:26:36 **** Clean-only build of configuration Nios II for project spi_test ****
 make clean 
 [spi_test clean complete]
+15:01:15 **** Clean-only build of configuration Nios II for project spi_test_2_bsp ****
+make clean 
+[BSP clean complete]
+15:01:18 **** Clean-only build of configuration Nios II for project spi_test_2 ****
+make clean 
+[spi_test_2 clean complete]

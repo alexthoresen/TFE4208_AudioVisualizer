@@ -44,6 +44,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "GPIO[15]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[14]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[13]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[6]",
 					"strict" : false
 				},
@@ -492,11 +504,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[2]",
+					"name" : "KEY[1]",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[1]",
+					"name" : "KEY[2]",
 					"strict" : false
 				},
 				{
