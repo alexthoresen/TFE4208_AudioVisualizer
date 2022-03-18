@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,13 +16,14 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 0 0 512 184)
+	(rect 0 0 512 272)
 	(text "DE2_115_SOPC" (rect 209 -1 277 11)(font "Arial" (font_size 10)))
-	(text "inst" (rect 8 168 20 180)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
 	(port
 		(pt 0 72)
 		(input)
@@ -38,11 +39,39 @@ refer to the applicable agreement for further details.
 		(line (pt 0 152)(pt 224 152)(line_width 1))
 	)
 	(port
+		(pt 0 192)
+		(input)
+		(text "spi_led_matrix_external_MISO" (rect 0 0 123 12)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_MISO" (rect 4 181 172 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 224 192)(line_width 1))
+	)
+	(port
 		(pt 0 112)
 		(output)
 		(text "pio_led_external_connection_export[7..0]" (rect 0 0 161 12)(font "Arial" (font_size 8)))
 		(text "pio_led_external_connection_export[7..0]" (rect 4 101 244 112)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 224 112)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "spi_led_matrix_external_MOSI" (rect 0 0 123 12)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_MOSI" (rect 4 197 172 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 224 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "spi_led_matrix_external_SCLK" (rect 0 0 126 12)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_SCLK" (rect 4 213 172 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 224 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(output)
+		(text "spi_led_matrix_external_SS_n" (rect 0 0 122 12)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_SS_n" (rect 4 229 172 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 224 240)(line_width 1))
 	)
 	(drawing
 		(text "clk" (rect 209 43 436 99)(font "Arial" (color 128 0 0)(font_size 9)))
@@ -51,20 +80,27 @@ refer to the applicable agreement for further details.
 		(text "export" (rect 229 107 494 224)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 195 123 420 259)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 229 147 500 304)(font "Arial" (color 0 0 0)))
-		(text " DE2_115_SOPC " (rect 439 168 962 346)(font "Arial" ))
+		(text "spi_led_matrix_external" (rect 85 163 308 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "MISO" (rect 229 187 482 384)(font "Arial" (color 0 0 0)))
+		(text "MOSI" (rect 229 203 482 416)(font "Arial" (color 0 0 0)))
+		(text "SCLK" (rect 229 219 482 448)(font "Arial" (color 0 0 0)))
+		(text "SS_n" (rect 229 235 482 480)(font "Arial" (color 0 0 0)))
+		(text " DE2_115_SOPC " (rect 439 256 962 522)(font "Arial" ))
 		(line (pt 224 32)(pt 288 32)(line_width 1))
-		(line (pt 288 32)(pt 288 168)(line_width 1))
-		(line (pt 224 168)(pt 288 168)(line_width 1))
-		(line (pt 224 32)(pt 224 168)(line_width 1))
+		(line (pt 288 32)(pt 288 256)(line_width 1))
+		(line (pt 224 256)(pt 288 256)(line_width 1))
+		(line (pt 224 32)(pt 224 256)(line_width 1))
 		(line (pt 225 52)(pt 225 76)(line_width 1))
 		(line (pt 226 52)(pt 226 76)(line_width 1))
 		(line (pt 225 92)(pt 225 116)(line_width 1))
 		(line (pt 226 92)(pt 226 116)(line_width 1))
 		(line (pt 225 132)(pt 225 156)(line_width 1))
 		(line (pt 226 132)(pt 226 156)(line_width 1))
+		(line (pt 225 172)(pt 225 244)(line_width 1))
+		(line (pt 226 172)(pt 226 244)(line_width 1))
 		(line (pt 0 0)(pt 512 0)(line_width 1))
-		(line (pt 512 0)(pt 512 184)(line_width 1))
-		(line (pt 0 184)(pt 512 184)(line_width 1))
-		(line (pt 0 0)(pt 0 184)(line_width 1))
+		(line (pt 512 0)(pt 512 272)(line_width 1))
+		(line (pt 0 272)(pt 512 272)(line_width 1))
+		(line (pt 0 0)(pt 0 272)(line_width 1))
 	)
 )

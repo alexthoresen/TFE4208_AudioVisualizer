@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,7 +16,8 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 //#pragma file_not_in_maxplusii_format
 (header "graphic" (version "1.4"))
@@ -596,6 +597,57 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 	(annotation_block (location)(rect 1296 840 1344 944))
+)
+(pin
+	(output)
+	(rect 1168 -296 1344 -280)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "GPIO[13]" (rect 90 0 136 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1344 -280 1408 -256))
+)
+(pin
+	(output)
+	(rect 1168 -272 1344 -256)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "GPIO[14]" (rect 90 0 133 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1344 -256 1408 -232))
+)
+(pin
+	(output)
+	(rect 1168 -248 1344 -232)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "GPIO[15]" (rect 90 0 133 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1344 -232 1416 -208))
 )
 (pin
 	(bidir)
@@ -1485,9 +1537,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 160 -448 672 -264)
+	(rect 160 -464 672 -192)
 	(text "DE2_115_SOPC" (rect 209 -1 323 15)(font "Arial" (font_size 10)))
-	(text "inst12" (rect 8 168 36 185)(font "Intel Clear" ))
+	(text "inst12" (rect 8 256 37 268)(font "Arial" ))
 	(port
 		(pt 0 72)
 		(input)
@@ -1503,11 +1555,39 @@ refer to the applicable agreement for further details.
 		(line (pt 0 152)(pt 224 152))
 	)
 	(port
+		(pt 0 192)
+		(input)
+		(text "spi_led_matrix_external_MISO" (rect 0 0 171 14)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_MISO" (rect 4 181 175 195)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 224 192))
+	)
+	(port
 		(pt 0 112)
 		(output)
 		(text "pio_led_external_connection_export[7..0]" (rect 0 0 234 14)(font "Arial" (font_size 8)))
 		(text "pio_led_external_connection_export[7..0]" (rect 4 101 238 115)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 224 112)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "spi_led_matrix_external_MOSI" (rect 0 0 171 14)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_MOSI" (rect 4 197 175 211)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 224 208))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "spi_led_matrix_external_SCLK" (rect 0 0 173 14)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_SCLK" (rect 4 213 177 227)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 224 224))
+	)
+	(port
+		(pt 0 240)
+		(output)
+		(text "spi_led_matrix_external_SS_n" (rect 0 0 172 14)(font "Arial" (font_size 8)))
+		(text "spi_led_matrix_external_SS_n" (rect 4 229 176 243)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 224 240))
 	)
 	(drawing
 		(text "clk" (rect 209 43 226 58)(font "Arial" (color 128 0 0)(font_size 9)))
@@ -1516,21 +1596,28 @@ refer to the applicable agreement for further details.
 		(text "export" (rect 229 107 259 119)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 195 123 228 138)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 229 147 265 159)(font "Arial" (color 0 0 0)))
-		(text " DE2_115_SOPC " (rect 439 168 527 180)(font "Arial" ))
+		(text "spi_led_matrix_external" (rect 85 163 239 178)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "MISO" (rect 229 187 256 199)(font "Arial" (color 0 0 0)))
+		(text "MOSI" (rect 229 203 256 215)(font "Arial" (color 0 0 0)))
+		(text "SCLK" (rect 229 219 257 231)(font "Arial" (color 0 0 0)))
+		(text "SS_n" (rect 229 235 254 247)(font "Arial" (color 0 0 0)))
+		(text " DE2_115_SOPC " (rect 439 256 527 268)(font "Arial" ))
 		(line (pt 224 32)(pt 288 32))
-		(line (pt 288 32)(pt 288 168))
-		(line (pt 224 168)(pt 288 168))
-		(line (pt 224 32)(pt 224 168))
+		(line (pt 288 32)(pt 288 256))
+		(line (pt 224 256)(pt 288 256))
+		(line (pt 224 32)(pt 224 256))
 		(line (pt 225 52)(pt 225 76))
 		(line (pt 226 52)(pt 226 76))
 		(line (pt 225 92)(pt 225 116))
 		(line (pt 226 92)(pt 226 116))
 		(line (pt 225 132)(pt 225 156))
 		(line (pt 226 132)(pt 226 156))
+		(line (pt 225 172)(pt 225 244))
+		(line (pt 226 172)(pt 226 244))
 		(line (pt 0 0)(pt 512 0))
-		(line (pt 512 0)(pt 512 184))
-		(line (pt 0 184)(pt 512 184))
-		(line (pt 0 0)(pt 0 184))
+		(line (pt 512 0)(pt 512 272))
+		(line (pt 0 272)(pt 512 272))
+		(line (pt 0 0)(pt 0 272))
 	)
 )
 (connector
@@ -2195,32 +2282,6 @@ refer to the applicable agreement for further details.
 	(pt 328 1000)
 )
 (connector
-	(pt 112 -200)
-	(pt 112 -376)
-)
-(connector
-	(pt 112 -376)
-	(pt 160 -376)
-)
-(connector
-	(pt 104 -200)
-	(pt 112 -200)
-)
-(connector
-	(pt 112 -200)
-	(pt 152 -200)
-)
-(connector
-	(pt 160 -336)
-	(pt 144 -336)
-	(bus)
-)
-(connector
-	(pt 144 -336)
-	(pt 144 -472)
-	(bus)
-)
-(connector
 	(pt 144 -472)
 	(pt 712 -472)
 	(bus)
@@ -2236,12 +2297,38 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 128 -296)
-	(pt 128 -184)
+	(pt 112 -200)
+	(pt 112 -392)
 )
 (connector
-	(pt 128 -296)
-	(pt 160 -296)
+	(pt 112 -392)
+	(pt 160 -392)
+)
+(connector
+	(pt 144 -352)
+	(pt 160 -352)
+	(bus)
+)
+(connector
+	(pt 144 -472)
+	(pt 144 -352)
+	(bus)
+)
+(connector
+	(pt 128 -184)
+	(pt 128 -312)
+)
+(connector
+	(pt 128 -312)
+	(pt 160 -312)
+)
+(connector
+	(pt 104 -200)
+	(pt 112 -200)
+)
+(connector
+	(pt 112 -200)
+	(pt 152 -200)
 )
 (connector
 	(pt 104 -184)
@@ -2250,6 +2337,36 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 128 -184)
 	(pt 152 -184)
+)
+(connector
+	(text "spi_mosi" (rect 74 -272 115 -255)(font "Intel Clear" ))
+	(pt 160 -256)
+	(pt 64 -256)
+)
+(connector
+	(text "spi_clk" (rect 74 -256 107 -239)(font "Intel Clear" ))
+	(pt 160 -240)
+	(pt 64 -240)
+)
+(connector
+	(text "spi_cs_" (rect 74 -240 108 -223)(font "Intel Clear" ))
+	(pt 160 -224)
+	(pt 64 -224)
+)
+(connector
+	(text "spi_cs_" (rect 1120 -304 1154 -287)(font "Intel Clear" ))
+	(pt 1168 -288)
+	(pt 1120 -288)
+)
+(connector
+	(text "spi_clk" (rect 1120 -280 1153 -263)(font "Intel Clear" ))
+	(pt 1168 -264)
+	(pt 1120 -264)
+)
+(connector
+	(text "spi_mosi" (rect 1120 -256 1161 -239)(font "Intel Clear" ))
+	(pt 1168 -240)
+	(pt 1120 -240)
 )
 (junction (pt 160 344))
 (junction (pt 488 -200))
