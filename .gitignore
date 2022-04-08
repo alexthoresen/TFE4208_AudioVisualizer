@@ -69,5 +69,9 @@ package-lock.json
 .expo/web/*
 
 # other
+software/.metadata/*
 db/*.flock
-software/.metadata/
+db/Ver2.db_info
+db/Ver2.tmw_info
+.qsys_edit/unnamed.xml
+.qsys_edit/unnamed_schematic.nlv
