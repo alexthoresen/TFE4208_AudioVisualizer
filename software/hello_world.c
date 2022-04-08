@@ -13,7 +13,7 @@
 void spi_send(alt_u8 addr, alt_u8 data) {
 	alt_u8 write_buf[2] = {addr, data};
 
-	alt_avalon_spi_command(SPI_MATRIX_BASE, 0, 2, &write_buf[0], 0, 0, 0);
+	alt_avalon_spi_command(SPI_MATRIX_BASE, 0, 2, &write_buf, 0, 0, 0);
 }
 
 void led_matrix_setup() {
