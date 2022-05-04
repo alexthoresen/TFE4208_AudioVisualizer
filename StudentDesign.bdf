@@ -532,11 +532,6 @@ refer to the applicable agreement for further details.
 		(text "A[15..0]" (rect 21 43 68 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
-)
-(symbol
-	(rect 336 384 848 656)
-	(text "DE2_115_SOPC" (rect 209 -1 323 15)(font "Arial" (font_size 10)))
-	(text "inst1" (rect 8 256 31 268)(font "Arial" ))
 	(port
 		(pt 0 64)
 		(input)
@@ -588,14 +583,14 @@ refer to the applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 0 112)
+		(pt 0 64)
 		(input)
 		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
 		(text "CLK" (rect 21 59 44 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 0 152)
+		(pt 0 80)
 		(input)
 		(text "RESET_N" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
 		(text "RESET_N" (rect 21 75 76 94)(font "Intel Clear" (font_size 8)))

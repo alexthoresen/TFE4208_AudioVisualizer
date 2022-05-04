@@ -66,14 +66,14 @@ refer to the applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
-		(pt 232 80)
+		(pt 208 32)
 		(output)
 		(text "RESULT_B[7..0]" (rect 0 0 94 19)(font "Intel Clear" (font_size 8)))
 		(text "RESULT_B[7..0]" (rect 93 27 187 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(port
-		(pt 232 96)
+		(pt 208 48)
 		(output)
 		(text "COUNTER_DONE" (rect 0 0 102 19)(font "Intel Clear" (font_size 8)))
 		(text "COUNTER_DONE" (rect 85 43 187 62)(font "Intel Clear" (font_size 8)))
