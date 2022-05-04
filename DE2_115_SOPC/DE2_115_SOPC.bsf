@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,7 +16,8 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
@@ -31,6 +32,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 72)(pt 224 72)(line_width 1))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "pio_keys_external_connection_export[3..0]" (rect 0 0 171 12)(font "Arial" (font_size 8)))
+		(text "pio_keys_external_connection_export[3..0]" (rect 4 101 250 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 224 112)(line_width 3))
+	)
+	(port
 		(pt 0 152)
 		(input)
 		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
@@ -43,13 +51,6 @@ refer to the applicable agreement for further details.
 		(text "spi_led_matrix_external_MISO" (rect 0 0 123 12)(font "Arial" (font_size 8)))
 		(text "spi_led_matrix_external_MISO" (rect 4 181 172 192)(font "Arial" (font_size 8)))
 		(line (pt 0 192)(pt 224 192)(line_width 1))
-	)
-	(port
-		(pt 0 112)
-		(output)
-		(text "pio_led_external_connection_export[7..0]" (rect 0 0 161 12)(font "Arial" (font_size 8)))
-		(text "pio_led_external_connection_export[7..0]" (rect 4 101 244 112)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 224 112)(line_width 3))
 	)
 	(port
 		(pt 0 208)
@@ -75,7 +76,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(text "clk" (rect 209 43 436 99)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "clk" (rect 229 67 476 144)(font "Arial" (color 0 0 0)))
-		(text "pio_led_external_connection" (rect 60 83 282 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "pio_keys_external_connection" (rect 50 83 268 179)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 229 107 494 224)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 195 123 420 259)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 229 147 500 304)(font "Arial" (color 0 0 0)))

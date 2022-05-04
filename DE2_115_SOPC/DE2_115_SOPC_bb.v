@@ -1,7 +1,7 @@
 
 module DE2_115_SOPC (
 	clk_clk,
-	pio_led_external_connection_export,
+	pio_keys_external_connection_export,
 	reset_reset_n,
 	spi_led_matrix_external_MISO,
 	spi_led_matrix_external_MOSI,
@@ -9,7 +9,7 @@ module DE2_115_SOPC (
 	spi_led_matrix_external_SS_n);	
 
 	input		clk_clk;
-	output	[7:0]	pio_led_external_connection_export;
+	input	[3:0]	pio_keys_external_connection_export;
 	input		reset_reset_n;
 	input		spi_led_matrix_external_MISO;
 	output		spi_led_matrix_external_MOSI;

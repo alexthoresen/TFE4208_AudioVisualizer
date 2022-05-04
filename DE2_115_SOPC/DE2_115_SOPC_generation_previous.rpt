@@ -10,8 +10,8 @@ Progress: Adding jtag_uart [altera_avalon_jtag_uart 20.1]
 Progress: Parameterizing module jtag_uart
 Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 20.1]
 Progress: Parameterizing module onchip_memory2
-Progress: Adding pio_led [altera_avalon_pio 20.1]
-Progress: Parameterizing module pio_led
+Progress: Adding pio_keys [altera_avalon_pio 20.1]
+Progress: Parameterizing module pio_keys
 Progress: Adding spi_led_matrix [altera_avalon_spi 20.1]
 Progress: Parameterizing module spi_led_matrix
 Progress: Building connections
@@ -19,8 +19,8 @@ Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
 Info: DE2_115_SOPC.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: DE2_115_SOPC.pio_keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Warning: DE2_115_SOPC.spi_led_matrix: Interrupt sender spi_led_matrix.irq is not connected to an interrupt receiver
-Warning: DE2_115_SOPC.spi_led_matrix: spi_led_matrix.spi_control_port must be connected to an Avalon-MM master
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
@@ -36,8 +36,8 @@ Progress: Adding jtag_uart [altera_avalon_jtag_uart 20.1]
 Progress: Parameterizing module jtag_uart
 Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 20.1]
 Progress: Parameterizing module onchip_memory2
-Progress: Adding pio_led [altera_avalon_pio 20.1]
-Progress: Parameterizing module pio_led
+Progress: Adding pio_keys [altera_avalon_pio 20.1]
+Progress: Parameterizing module pio_keys
 Progress: Adding spi_led_matrix [altera_avalon_spi 20.1]
 Progress: Parameterizing module spi_led_matrix
 Progress: Building connections
@@ -45,49 +45,50 @@ Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
 Info: DE2_115_SOPC.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: DE2_115_SOPC.pio_keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Warning: DE2_115_SOPC.spi_led_matrix: Interrupt sender spi_led_matrix.irq is not connected to an interrupt receiver
-Warning: DE2_115_SOPC.spi_led_matrix: spi_led_matrix.spi_control_port must be connected to an Avalon-MM master
 Info: DE2_115_SOPC: Generating DE2_115_SOPC "DE2_115_SOPC" for QUARTUS_SYNTH
 Info: cpu_lab6: "DE2_115_SOPC" instantiated altera_nios2_gen2 "cpu_lab6"
 Info: jtag_uart: Starting RTL generation for module 'DE2_115_SOPC_jtag_uart'
-Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2_115_SOPC_jtag_uart --dir=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0002_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0002_jtag_uart_gen//DE2_115_SOPC_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2_115_SOPC_jtag_uart --dir=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0002_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0002_jtag_uart_gen//DE2_115_SOPC_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'DE2_115_SOPC_jtag_uart'
 Info: jtag_uart: "DE2_115_SOPC" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: onchip_memory2: Starting RTL generation for module 'DE2_115_SOPC_onchip_memory2'
-Info: onchip_memory2:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2_115_SOPC_onchip_memory2 --dir=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0003_onchip_memory2_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0003_onchip_memory2_gen//DE2_115_SOPC_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2_115_SOPC_onchip_memory2 --dir=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0003_onchip_memory2_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0003_onchip_memory2_gen//DE2_115_SOPC_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2: Done RTL generation for module 'DE2_115_SOPC_onchip_memory2'
 Info: onchip_memory2: "DE2_115_SOPC" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
-Info: pio_led: Starting RTL generation for module 'DE2_115_SOPC_pio_led'
-Info: pio_led:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2_115_SOPC_pio_led --dir=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0004_pio_led_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0004_pio_led_gen//DE2_115_SOPC_pio_led_component_configuration.pl  --do_build_sim=0  ]
-Info: pio_led: Done RTL generation for module 'DE2_115_SOPC_pio_led'
-Info: pio_led: "DE2_115_SOPC" instantiated altera_avalon_pio "pio_led"
+Info: pio_keys: Starting RTL generation for module 'DE2_115_SOPC_pio_keys'
+Info: pio_keys:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2_115_SOPC_pio_keys --dir=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0004_pio_keys_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0004_pio_keys_gen//DE2_115_SOPC_pio_keys_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_keys: Done RTL generation for module 'DE2_115_SOPC_pio_keys'
+Info: pio_keys: "DE2_115_SOPC" instantiated altera_avalon_pio "pio_keys"
 Info: spi_led_matrix: Starting RTL generation for module 'DE2_115_SOPC_spi_led_matrix'
-Info: spi_led_matrix:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=DE2_115_SOPC_spi_led_matrix --dir=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0005_spi_led_matrix_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0005_spi_led_matrix_gen//DE2_115_SOPC_spi_led_matrix_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_led_matrix:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=DE2_115_SOPC_spi_led_matrix --dir=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0005_spi_led_matrix_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0005_spi_led_matrix_gen//DE2_115_SOPC_spi_led_matrix_component_configuration.pl  --do_build_sim=0  ]
 Info: spi_led_matrix: Done RTL generation for module 'DE2_115_SOPC_spi_led_matrix'
 Info: spi_led_matrix: "DE2_115_SOPC" instantiated altera_avalon_spi "spi_led_matrix"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "DE2_115_SOPC" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "DE2_115_SOPC" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "DE2_115_SOPC" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'DE2_115_SOPC_cpu_lab6_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=DE2_115_SOPC_cpu_lab6_cpu --dir=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0008_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9069_6721964385874457300.dir/0008_cpu_gen//DE2_115_SOPC_cpu_lab6_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2022.03.18 12:51:42 (*) Starting Nios II generation
-Info: cpu: # 2022.03.18 12:51:42 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2022.03.18 12:51:42 (*)   Creating all objects for CPU
-Info: cpu: # 2022.03.18 12:51:42 (*)     Testbench
-Info: cpu: # 2022.03.18 12:51:43 (*)     Instruction decoding
-Info: cpu: # 2022.03.18 12:51:43 (*)       Instruction fields
-Info: cpu: # 2022.03.18 12:51:43 (*)       Instruction decodes
-Info: cpu: # 2022.03.18 12:51:43 (*)       Signals for RTL simulation waveforms
-Info: cpu: # 2022.03.18 12:51:43 (*)       Instruction controls
-Info: cpu: # 2022.03.18 12:51:43 (*)     Pipeline frontend
-Info: cpu: # 2022.03.18 12:51:43 (*)     Pipeline backend
-Info: cpu: # 2022.03.18 12:51:45 (*)   Generating RTL from CPU objects
-Info: cpu: # 2022.03.18 12:51:45 (*)   Creating plain-text RTL
-Info: cpu: # 2022.03.18 12:51:45 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=DE2_115_SOPC_cpu_lab6_cpu --dir=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0008_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/stian/AppData/Local/Temp/alt9090_8065792280483403909.dir/0008_cpu_gen//DE2_115_SOPC_cpu_lab6_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2022.04.08 10:51:14 (*) Starting Nios II generation
+Info: cpu: # 2022.04.08 10:51:14 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2022.04.08 10:51:14 (*)   Creating all objects for CPU
+Info: cpu: # 2022.04.08 10:51:14 (*)     Testbench
+Info: cpu: # 2022.04.08 10:51:15 (*)     Instruction decoding
+Info: cpu: # 2022.04.08 10:51:15 (*)       Instruction fields
+Info: cpu: # 2022.04.08 10:51:15 (*)       Instruction decodes
+Info: cpu: # 2022.04.08 10:51:15 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2022.04.08 10:51:15 (*)       Instruction controls
+Info: cpu: # 2022.04.08 10:51:15 (*)     Pipeline frontend
+Info: cpu: # 2022.04.08 10:51:15 (*)     Pipeline backend
+Info: cpu: # 2022.04.08 10:51:17 (*)   Generating RTL from CPU objects
+Info: cpu: # 2022.04.08 10:51:17 (*)   Creating plain-text RTL
+Info: cpu: # 2022.04.08 10:51:18 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'DE2_115_SOPC_cpu_lab6_cpu'
 Info: cpu: "cpu_lab6" instantiated altera_nios2_gen2_unit "cpu"
 Info: cpu_lab6_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_lab6_data_master_translator"
