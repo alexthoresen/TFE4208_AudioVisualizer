@@ -1,21 +1,14 @@
-LPM_DECODES=16
-LPM_TYPE=LPM_DECODE
-LPM_WIDTH=4
-DEVICE_FAMILY="Cyclone II"
-data
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
+DENORMAL_SUPPORT=NO
+DIRECTION=ADD
+INTENDED_DEVICE_FAMILY="Cyclone IV E"
+OPTIMIZE=SPEED
+PIPELINE=13
+REDUCED_FUNCTIONALITY=NO
+WIDTH_EXP=8
+WIDTH_MAN=23
+DEVICE_FAMILY="Cyclone IV E"
+clk_en
+clock
+dataa
+datab
+result
