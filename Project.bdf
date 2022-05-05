@@ -22,7 +22,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -64 -208 112 -192)
+	(rect -72 -208 104 -192)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50" (rect 9 0 64 12)(font "Arial" ))
 	(pt 176 8)
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 -192 112 -176)
+	(rect -72 -192 104 -176)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "KEY[0]" (rect 9 0 44 12)(font "Arial" ))
 	(pt 176 8)
@@ -54,7 +54,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 920 112 936)
+	(rect -80 920 96 936)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SW[7..0]" (rect 9 0 52 12)(font "Arial" ))
 	(pt 176 8)
@@ -70,7 +70,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 944 112 960)
+	(rect -80 944 96 960)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SW[15..8]" (rect 9 0 58 12)(font "Arial" ))
 	(pt 176 8)
@@ -86,7 +86,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 968 112 984)
+	(rect -80 968 96 984)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SW[17]" (rect 9 0 45 12)(font "Arial" ))
 	(pt 176 8)
@@ -102,7 +102,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 256 112 272)
+	(rect -72 256 104 272)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "KEY[3]" (rect 9 0 44 12)(font "Arial" ))
 	(pt 176 8)
@@ -118,7 +118,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 0 112 16)
+	(rect -72 0 104 16)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "AUD_ADCDAT" (rect 9 0 83 12)(font "Arial" ))
 	(pt 176 8)
@@ -134,7 +134,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 80 112 96)
+	(rect -72 80 104 96)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "KEY[1]" (rect 9 0 44 12)(font "Arial" ))
 	(pt 176 8)
@@ -150,7 +150,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -64 168 112 184)
+	(rect -72 168 104 184)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "KEY[2]" (rect 9 0 44 12)(font "Arial" ))
 	(pt 176 8)
@@ -1422,6 +1422,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 72)(pt 224 72))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "pio_keys_external_connection_export[3..0]" (rect 0 0 245 14)(font "Arial" (font_size 8)))
+		(text "pio_keys_external_connection_export[3..0]" (rect 4 101 249 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 224 112)(line_width 3))
+	)
+	(port
 		(pt 0 152)
 		(input)
 		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
@@ -1434,13 +1441,6 @@ refer to the applicable agreement for further details.
 		(text "spi_led_matrix_external_MISO" (rect 0 0 171 14)(font "Arial" (font_size 8)))
 		(text "spi_led_matrix_external_MISO" (rect 4 181 175 195)(font "Arial" (font_size 8)))
 		(line (pt 0 192)(pt 224 192))
-	)
-	(port
-		(pt 0 112)
-		(output)
-		(text "pio_led_external_connection_export[7..0]" (rect 0 0 234 14)(font "Arial" (font_size 8)))
-		(text "pio_led_external_connection_export[7..0]" (rect 4 101 238 115)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 224 112)(line_width 3))
 	)
 	(port
 		(pt 0 208)
@@ -1466,7 +1466,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(text "clk" (rect 209 43 226 58)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "clk" (rect 229 67 243 79)(font "Arial" (color 0 0 0)))
-		(text "pio_led_external_connection" (rect 60 83 246 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "pio_keys_external_connection" (rect 50 83 245 98)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 229 107 259 119)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 195 123 228 138)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 229 147 265 159)(font "Arial" (color 0 0 0)))
@@ -1495,9 +1495,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 464 640 672 800)
+	(rect 464 640 672 768)
 	(text "StudentDesign" (rect 5 0 92 19)(font "Intel Clear" (font_size 8)))
-	(text "inst1" (rect 8 139 30 156)(font "Intel Clear" ))
+	(text "inst1" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1527,24 +1527,10 @@ refer to the applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 0 96)
-		(input)
-		(text "C[7..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "C[7..0]" (rect 21 91 59 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "D[7..0]" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
-		(text "D[7..0]" (rect 21 107 61 126)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
 		(pt 208 32)
 		(output)
-		(text "RESULT_B[7..0]" (rect 0 0 94 19)(font "Intel Clear" (font_size 8)))
-		(text "RESULT_B[7..0]" (rect 93 27 187 46)(font "Intel Clear" (font_size 8)))
+		(text "RESULT[63..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
+		(text "RESULT[63..0]" (rect 100 27 187 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(port
@@ -1555,7 +1541,7 @@ refer to the applicable agreement for further details.
 		(line (pt 208 48)(pt 192 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 144))
+		(rectangle (rect 16 16 192 112))
 	)
 )
 (connector
@@ -2101,15 +2087,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 672 672)
-	(pt 768 672)
-	(bus)
-)
-(connector
-	(pt 672 688)
-	(pt 768 688)
-)
-(connector
 	(text "audioDataOut[15..0]" (rect 42 672 141 684)(font "Arial" ))
 	(pt 32 688)
 	(pt 464 688)
@@ -2156,45 +2133,23 @@ refer to the applicable agreement for further details.
 	(pt 464 1136)
 )
 (connector
-	(pt 104 -184)
-	(pt 112 -184)
-)
-(connector
-	(pt 112 -184)
-	(pt 128 -184)
-)
-(connector
 	(pt 128 -184)
 	(pt 152 -184)
 )
 (connector
-	(pt 104 928)
-	(pt 112 928)
-	(bus)
-)
-(connector
 	(text "C[7..0]" (rect 498 912 532 924)(font "Arial" ))
-	(pt 112 928)
+	(pt 96 928)
 	(pt 1120 928)
 	(bus)
 )
 (connector
-	(pt 104 952)
-	(pt 112 952)
-	(bus)
-)
-(connector
 	(text "D[7..0]" (rect 498 936 532 948)(font "Arial" ))
-	(pt 112 952)
+	(pt 96 952)
 	(pt 1120 952)
 	(bus)
 )
 (connector
-	(pt 104 976)
-	(pt 112 976)
-)
-(connector
-	(pt 112 976)
+	(pt 96 976)
 	(pt 216 976)
 )
 (connector
@@ -2203,36 +2158,33 @@ refer to the applicable agreement for further details.
 	(pt 1120 976)
 )
 (connector
-	(pt 104 264)
-	(pt 112 264)
-)
-(connector
-	(pt 112 264)
-	(pt 240 264)
+	(pt 104 -184)
+	(pt 128 -184)
 )
 (connector
 	(pt 104 8)
-	(pt 112 8)
-)
-(connector
-	(pt 112 8)
 	(pt 664 8)
 )
 (connector
 	(pt 104 88)
-	(pt 112 88)
-)
-(connector
-	(pt 112 88)
 	(pt 240 88)
 )
 (connector
 	(pt 104 176)
-	(pt 112 176)
+	(pt 240 176)
 )
 (connector
-	(pt 112 176)
-	(pt 240 176)
+	(pt 104 264)
+	(pt 240 264)
+)
+(connector
+	(pt 672 672)
+	(pt 768 672)
+	(bus)
+)
+(connector
+	(pt 672 688)
+	(pt 768 688)
 )
 (junction (pt 160 344))
 (junction (pt 488 -200))
@@ -2250,13 +2202,5 @@ refer to the applicable agreement for further details.
 (junction (pt 192 248))
 (junction (pt 112 -200))
 (junction (pt 128 -184))
-(junction (pt 112 8))
-(junction (pt 112 928))
-(junction (pt 112 952))
-(junction (pt 112 976))
-(junction (pt 112 88))
-(junction (pt 112 176))
-(junction (pt 112 264))
-(junction (pt 112 -184))
 (junction (pt 416 720))
 (junction (pt 232 704))
