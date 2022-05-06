@@ -5,16 +5,16 @@ use ieee.numeric_std.all;
 entity filter_internal_datapath is
     -- Generic coefficients
     generic (
-             A1 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             A2 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             A3 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             A4 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+             A1 : STD_LOGIC_VECTOR(31 downto 0) := x"3fc9543f";
+             A2 : STD_LOGIC_VECTOR(31 downto 0) := x"bfd6c831";
+             A3 : STD_LOGIC_VECTOR(31 downto 0) := x"3f6a7f96";
+             A4 : STD_LOGIC_VECTOR(31 downto 0) := x"bebbc988";
 
-             B0 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             B1 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             B2 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             B3 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-             B4 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0')
+             B0 : STD_LOGIC_VECTOR(31 downto 0) := x"3dab2249";
+             B1 : STD_LOGIC_VECTOR(31 downto 0) := x"00000000";
+             B2 : STD_LOGIC_VECTOR(31 downto 0) := x"be2b2249";
+             B3 : STD_LOGIC_VECTOR(31 downto 0) := x"00000000";
+             B4 : STD_LOGIC_VECTOR(31 downto 0) := x"3dab2249"
     );
 
     port (

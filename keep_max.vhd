@@ -7,7 +7,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity keep_max is
   Generic (
-    SIZE_BITS : integer
+    SIZE_BITS : integer := 8
   );
   Port (
     CLK : in std_logic;
@@ -17,8 +17,10 @@ entity keep_max is
     
     STORE : in std_logic;
     FORCE_NEW : in std_logic;
+	 DVI : in std_logic;
     
-    O : out std_logic_vector(SIZE_BITS-1 downto 0)
+    O : out std_logic_vector(SIZE_BITS-1 downto 0);
+	 DVO : out std_logic
   );
 end keep_max;
 
@@ -46,6 +48,19 @@ begin
             end if;
         end if;
     end process P_REG;
+	 
+	 P_DVO: process(CLK, RESET_N)
+	 begin
+		if RESET_N = '0' then
+			DVO <= '0';
+		elsif rising_edge(CLK) then
+			if FORCE_NEW = '1' or STORE = '1' then
+				DVO <= DVI;
+			elsif DVI = '0' then
+				DVO <= '0';
+			end if;
+		end if;
+	 end process P_DVO;
 
     -- OUTPUTS
 

@@ -22,7 +22,7 @@ architecture rtl of map_converter is
 	
 begin
 
-	input_8_bit <= IN_32_BIT(31 DOWNTO 23);
+	input_8_bit <= IN_32_BIT(15 DOWNTO 7);
 
 	p_or: process(input_8_bit, or_vector) is
 	begin

@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 -- Counter for filter bank
 entity counter is
     generic (
-        SIZE_BITS : integer
+        SIZE_BITS : integer := 8
     );
     port (INCREMENT : in STD_LOGIC;
           CLK       : in STD_LOGIC;

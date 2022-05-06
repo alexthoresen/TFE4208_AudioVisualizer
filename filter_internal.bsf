@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,137 +16,103 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
-(header "symbol" (version "1.1"))
+(header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 280 128)
-	(text "filter_internal" (rect 5 0 54 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "DVI" (rect 0 0 17 12)(font "Arial" ))
-		(text "DVI" (rect 21 27 38 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "FILTER_IN[15..0]" (rect 0 0 74 12)(font "Arial" ))
-		(text "FILTER_IN[15..0]" (rect 21 43 95 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
+	(rect 64 64 328 176)
+	(text "filter_internal" (rect 5 0 68 12)(font "Arial" ))
+	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
 		(pt 0 64)
 		(input)
-		(text "CLK" (rect 0 0 20 12)(font "Arial" ))
-		(text "CLK" (rect 21 59 41 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 59 42 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "RESET_N" (rect 0 0 47 12)(font "Arial" ))
-		(text "RESET_N" (rect 21 75 68 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 1))
+		(text "RESET_N" (rect 0 0 49 12)(font "Arial" ))
+		(text "RESET_N" (rect 21 75 70 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "DVI" (rect 0 0 18 12)(font "Arial" ))
+		(text "DVI" (rect 21 19 39 31)(font "Arial" ))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "FILTER_IN[15..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "FILTER_IN[15..0]" (rect 21 35 108 47)(font "Arial" ))
+		(line (pt 0 40)(pt 16 40)(line_width 3))
+	)
+	(port
+		(pt 264 56)
+		(output)
+		(text "DVO" (rect 0 0 23 12)(font "Arial" ))
+		(text "DVO" (rect 224 51 243 63)(font "Arial" ))
+		(line (pt 264 56)(pt 248 56))
 	)
 	(port
 		(pt 264 32)
 		(output)
-		(text "FILTER_OUT[31..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "FILTER_OUT[31..0]" (rect 159 27 243 39)(font "Arial" ))
+		(text "FILTER_OUT[31..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "FILTER_OUT[31..0]" (rect 161 27 243 39)(font "Arial" ))
 		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
-	(port
-		(pt 264 48)
-		(output)
-		(text "DVO" (rect 0 0 22 12)(font "Arial" ))
-		(text "DVO" (rect 221 43 243 55)(font "Arial" ))
-		(line (pt 264 48)(pt 248 48)(line_width 1))
-	)
-	(parameter
-		"A0"
-		"1"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"A1"
-		"2000"
+		"00111111110010010101010000111111"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"A2"
-		"2000"
+		"10111111110101101100100000110001"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"A3"
-		"2000"
+		"00111111011010100111111110010110"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"A4"
-		"2000"
+		"10111110101110111100100110001000"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"A5"
-		"2000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"A6"
-		"2000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"A7"
-		"2000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"B0"
-		"2000"
+		"00111101101010110010001001001001"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"B1"
-		"2000"
+		"00000000000000000000000000000000"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"B2"
-		"2000"
+		"10111110001010110010001001001001"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"B3"
-		"2000"
+		"00000000000000000000000000000000"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"B4"
-		"2000"
+		"00111101101010110010001001001001"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"B5"
-		"2000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"B6"
-		"2000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"B7"
-		"2000"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
-		(rectangle (rect 16 16 248 96)(line_width 1))
+		(rectangle (rect 16 16 248 96))
 	)
-	(annotation_block (parameter)(rect 280 -64 380 16))
+	(annotation_block (parameter)(rect 280 -176 656 16))
 )
